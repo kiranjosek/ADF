@@ -1,0 +1,6 @@
+{
+	"name": "integrationRuntimeVicky",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}

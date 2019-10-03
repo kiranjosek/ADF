@@ -1,0 +1,17 @@
+{
+	"name": "SqlServer1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=True;data source=G26XWRF2E\\SQLEXPRESS;initial catalog=TrainingDB",
+			"userName": "LOGON\\212629688",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJmNTAwM2JmYS1lOTI1LTQ5NDctYmI5Ni1lZGY0NzgxMTNmMmUiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntimeVicky",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

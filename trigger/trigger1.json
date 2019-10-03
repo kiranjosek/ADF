@@ -1,0 +1,25 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "getMetaDataToForeach",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/data/blobs/input/",
+			"blobPathEndsWith": ".csv",
+			"scope": "/subscriptions/aac6a507-4966-4f00-8faa-66aca2973867/resourceGroups/ETLTraining/providers/Microsoft.Storage/storageAccounts/kiranstore",
+			"events": [
+				"Microsoft.Storage.BlobCreated",
+				"Microsoft.Storage.BlobDeleted"
+			]
+		}
+	}
+}
